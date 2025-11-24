@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>訓練儀表板</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              garmin: {
+                bg: '#000000',
+                card: '#1A1A1A',
+                primary: '#00BFFF', // Electric Blue
+                success: '#00FF00', // Green
+                border: '#333333',
+                textMain: '#FFFFFF',
+                textSub: '#A0A0A0',
+              }
+            },
+            fontFamily: {
+              sans: ['Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+              condensed: ['Roboto Condensed', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow': '0 0 10px rgba(0, 191, 255, 0.5)',
+              'glow-green': '0 0 10px rgba(0, 255, 0, 0.4)',
+              'tab': '0 -2px 8px rgba(0, 191, 255, 0.6)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00BFFF; 
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
